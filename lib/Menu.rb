@@ -1,12 +1,10 @@
 class Menu 
 
-  def initialize()
-    @dishes = {"chips": 1 , "Fish": 3}
+  def initialize(dishes)
+    @dishes = dishes
   end
 
   def dishes
     @dishes
   end 
-
-
 end

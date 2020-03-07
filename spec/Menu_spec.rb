@@ -1,10 +1,14 @@
 require "./lib/Menu"
+require "./lib/Dish"
 describe Menu do 
 
   it "Has a list of dishes" do 
-    menu = Menu.new
+    chip_dish = Dish.new("chips", 1)
+    fish_dish = Dish.new("Fish",3)
+    menu = Menu.new([chip_dish,fish_dish])
+    
     menu.dishes
-    expect(menu.dishes).to eq ({"chips": 1, "Fish": 3})
+    expect(menu.dishes).to eq ([chip_dish,fish_dish])
   end
 
 end 
